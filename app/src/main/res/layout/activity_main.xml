@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#F7C122"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/display"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="487dp"
+            android:layout_height="297dp"
+            android:layout_x="1dp"
+            android:layout_y="44dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <ViewFlipper
+            android:layout_width="487dp"
+            android:layout_height="297dp"
+            android:layout_x="487dp"
+            android:layout_y="44dp"
+            android:autoStart="true"
+            android:flipInterval="5000">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/img1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/img2"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/img3"
+                tools:ignore="ContentDescription" />
+        </ViewFlipper>
+
+        <ImageView
+            android:layout_width="974dp"
+            android:layout_height="189dp"
+            android:src="@drawable/logo"
+            android:layout_x="-4dp"
+            android:layout_y="343dp"
+            tools:ignore="ContentDescription" />
+
+    </AbsoluteLayout>
+
+</RelativeLayout>
+
